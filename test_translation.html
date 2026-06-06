@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <span id="test">Home</span>
+    <script src="translations.js"></script>
+    <script>
+        console.log(typeof translations);
+        console.log(translations['ar']['Home']);
+        const originalStr = "  Home  ";
+        const lookupStr = originalStr.replace(/\s+/g, ' ').trim();
+        console.log("Translation applied:", originalStr.replace(lookupStr, translations['ar'][lookupStr]));
+    </script>
+</body>
+</html>
