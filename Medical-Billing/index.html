@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Medical Billing Services | Revenue Cycle Management | Probiz</title>
+<link rel="icon" type="image/png" href="../favicon-probiz-removebg-preview.png"/>
+<meta name="description" content="Probiz provides comprehensive medical billing and revenue cycle management services for physicians, hospitals, and specialty practices. HIPAA-compliant, expert-driven billing solutions."/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../styles.css" rel="stylesheet"/>
+<style>
+.services-hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:60px 0}
+.shg-card{background:#fff;border-radius:18px;padding:36px 30px;border:1px solid rgba(15,29,74,0.08);box-shadow:var(--shadow-soft);transition:.4s;display:flex;flex-direction:column}
+.shg-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);border-color:var(--clr-gold)}
+.shg-icon{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--clr-navy),var(--clr-primary));display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.shg-icon i{color:#fff;font-size:1.6rem}
+.shg-card h3{font-size:1.2rem;margin-bottom:10px;color:var(--clr-navy)}
+.shg-card p{font-size:.93rem;line-height:1.7;color:var(--clr-text-muted);flex:1;margin-bottom:18px}
+.shg-card a{color:var(--clr-gold);font-weight:700;font-size:.9rem;text-decoration:none}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:50px 0}
+.why-card{background:var(--clr-surface);border-radius:16px;padding:32px;border:1px solid rgba(15,29,74,0.06);transition:.3s}
+.why-card:hover{border-color:var(--clr-gold);box-shadow:var(--shadow-soft)}
+.step-line{display:flex;gap:0;position:relative;margin:70px 0}
+.step-node{flex:1;text-align:center;padding:0 10px;position:relative}
+.step-node:not(:last-child)::after{content:'';position:absolute;top:34px;right:-15px;width:30px;height:3px;background:linear-gradient(90deg,var(--clr-navy),var(--clr-gold));z-index:2}
+.step-circle{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,var(--clr-navy),var(--clr-primary));display:flex;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 8px 24px rgba(15,29,74,.3)}
+.step-circle i{color:#fff;font-size:1.4rem}
+.spec-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin:50px 0}
+.spec-item{background:#fff;border-radius:14px;padding:28px 16px;text-align:center;border:1px solid rgba(15,29,74,.07);box-shadow:var(--shadow-soft);transition:.3s}
+.spec-item:hover{border-color:var(--clr-gold);transform:translateY(-4px)}
+.spec-item i{font-size:2rem;color:var(--clr-navy);margin-bottom:12px;display:block}
+.spec-item span{font-size:.9rem;font-weight:700;color:var(--clr-navy)}
+.faq-acc{max-width:900px;margin:50px auto}
+.facc-item{margin-bottom:16px;border-radius:12px;overflow:hidden;border:1px solid rgba(15,29,74,.08);background:#fff}
+.facc-input{display:none}
+.facc-label{display:flex;justify-content:space-between;align-items:center;padding:22px 30px;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--clr-navy)}
+.facc-label::after{content:'\f067';font-family:'Font Awesome 6 Free';font-weight:900;color:var(--clr-gold)}
+.facc-body{max-height:0;padding:0 30px;overflow:hidden;transition:.4s;color:var(--clr-text-muted);line-height:1.8;font-size:1rem}
+.facc-input:checked~.facc-body{max-height:500px;padding:0 30px 24px}
+.facc-input:checked~.facc-label::after{transform:rotate(45deg)}
+.compliance-badges{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin:40px 0}
+.cbadge{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:16px 28px;color:#fff;font-weight:700;font-size:.95rem;backdrop-filter:blur(8px)}
+@media(max-width:900px){.services-hub-grid,.why-grid,.spec-grid{grid-template-columns:1fr 1fr}.step-line{flex-direction:column}.step-node::after{display:none}}
+@media(max-width:600px){.services-hub-grid,.why-grid,.spec-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="bg-surface">
+<header class="header" id="header">
+<div class="container nav-container">
+<a class="logo" href="../index.html"><img alt="Probiz Logo" src="../Probiz logo.png"/></a>
+<nav class="navbar"><ul class="nav-menu">
+<li><a class="nav-link" href="../index.html">Home</a></li>
+<li><a class="nav-link" href="../services.html">Industries &amp; Services</a></li>
+<li class="nav-item-dropdown">
+<a class="nav-link active" href="index.html">Medical Billing <i class="fa-solid fa-chevron-down" style="font-size:.8rem;margin-left:5px"></i></a>
+<div class="nav-dropdown-menu">
+<a href="revenue-cycle-management.html">Revenue Cycle Management</a>
+<a href="medical-billing-services.html">Medical Billing Services</a>
+<a href="claims-submission.html">Claims Submission</a>
+<a href="denial-management.html">Denial Management</a>
+<a href="ar-recovery.html">AR Recovery</a>
+<a href="credentialing.html">Provider Credentialing</a>
+<a href="medical-coding.html">Medical Coding</a>
+<a href="physician-billing.html">Physician Billing</a>
+<a href="hospital-billing.html">Hospital Billing</a>
+<a href="specialties.html">Specialties Support</a>
+<a href="hipaa-compliance.html">HIPAA Compliance</a>
+<a href="faqs.html">FAQs</a>
+</div>
+</li>
+<li><a class="nav-link" href="../partnerships.html">Our Partnerships</a></li>
+<li><a class="nav-link" href="../career.html">Career</a></li>
+<li><a class="nav-link" href="../about.html">About</a></li>
+<li><a class="nav-link" href="../contact.html">Contact</a></li>
+</ul></nav>
+<div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+</div>
+</header>
+<section class="subpage-hero" style="min-height:88vh;display:flex;align-items:center;padding:140px 0 100px">
+<div class="subpage-hero-bg" style="background-image:url('../assets/hospital_administration_clean_1777730972184.png')"></div>
+<div class="container" style="position:relative;z-index:3">
+  <div class="reveal">
+    <div class="hero-badge-glam" style="margin-bottom:26px">Comprehensive Healthcare Revenue Solutions</div>
+    <h1 class="text-white serif" style="font-size:5rem;font-weight:900;line-height:1.05;margin-bottom:28px;text-shadow:0 4px 24px rgba(0,0,0,.9)">
+      Medical <span class="text-shimmer-gold">Billing Services</span>
+    </h1>
+    <p class="text-white-muted" style="font-size:1.35rem;max-width:700px;line-height:1.75;margin-bottom:44px">
+      From patient registration to final payment — we manage every step of your revenue cycle with certified expertise, advanced claim scrubbing, and relentless follow-up so you get paid faster and in full.
+    </p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:18px 40px;font-size:1.05rem">Get a Free Revenue Audit <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="revenue-cycle-management.html" class="btn btn-outline" style="padding:18px 40px;border-color:rgba(255,255,255,.35);color:#fff;font-size:1.05rem">Explore Full RCM</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- WHAT IS MEDICAL BILLING -->
+<section style="padding:100px 0;background:#fff">
+<div class="container">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+    <div class="reveal">
+      <div class="hero-badge-glam" style="display:inline-flex;margin-bottom:20px">The Foundation of Your Practice Revenue</div>
+      <h2 class="serif" style="font-size:3rem;margin-bottom:24px;color:var(--clr-navy)">What Is Medical Billing — And Why It Matters</h2>
+      <p style="font-size:1.1rem;line-height:1.85;color:var(--clr-text-muted);margin-bottom:18px">Medical billing is the process of translating healthcare services into standardized codes — then submitting, tracking, and collecting payment from insurance payers and patients. It is the financial backbone of every healthcare practice.</p>
+      <p style="font-size:1.1rem;line-height:1.85;color:var(--clr-text-muted);margin-bottom:18px">When done correctly, billing ensures that every procedure performed and every service rendered results in accurate, timely reimbursement. When done poorly, it leads to denials, delayed payments, underpayments, and cash flow problems that can cripple even a thriving clinical operation.</p>
+      <p style="font-size:1.1rem;line-height:1.85;color:var(--clr-text-muted)">Probiz takes ownership of this entire process — from charge capture and coding through claims submission, denial management, and patient billing — so your administrative burden disappears and your revenue flows predictably.</p>
+    </div>
+    <div class="reveal stagger-1">
+      <img src="../assets/medical_billing_dashboard_1777730057032.png" alt="Medical Billing Dashboard" style="width:100%;border-radius:24px;box-shadow:var(--shadow-deep)"/>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SERVICES GRID -->
+<section style="padding:100px 0;background:var(--clr-surface)">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px">
+    <h2 class="section-title serif">Our Complete <span class="text-shimmer-gold">Billing Service Suite</span></h2>
+    <p class="section-subtitle" style="margin:0 auto">Every service your revenue cycle needs — managed by certified specialists under one roof.</p>
+  </div>
+  <div class="services-hub-grid">
+    <div class="shg-card reveal">
+      <div class="shg-icon"><i class="fa-solid fa-rotate"></i></div>
+      <h3>Revenue Cycle Management</h3>
+      <p>End-to-end financial operations from patient registration to final payment posting. We own the entire cycle and are accountable for every dollar.</p>
+      <a href="revenue-cycle-management.html">Explore RCM <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal stagger-1">
+      <div class="shg-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+      <h3>Medical Billing Services</h3>
+      <p>Comprehensive front-to-back billing management — eligibility verification, charge capture, claims submission, payment posting, and patient statements.</p>
+      <a href="medical-billing-services.html">Explore Billing <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal stagger-2">
+      <div class="shg-icon"><i class="fa-solid fa-paper-plane"></i></div>
+      <h3>Claims Submission</h3>
+      <p>Electronic claim submission through secure clearinghouse connections. Every claim scrubbed against thousands of payer-specific rules before transmission.</p>
+      <a href="claims-submission.html">Explore Claims <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal">
+      <div class="shg-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <h3>Denial Management</h3>
+      <p>Systematic, data-driven approach to identifying, appealing, and preventing claim denials. Root-cause analysis ensures the same denial never recurs.</p>
+      <a href="denial-management.html">Explore Denials <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal stagger-1">
+      <div class="shg-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+      <h3>A/R Recovery</h3>
+      <p>Aggressive follow-up on aging accounts receivable. We recover revenue from claims 30, 60, 90, and 120+ days old that most practices have written off.</p>
+      <a href="ar-recovery.html">Explore AR Recovery <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal stagger-2">
+      <div class="shg-icon"><i class="fa-solid fa-id-card-clip"></i></div>
+      <h3>Provider Credentialing</h3>
+      <p>CAQH, PECOS, and commercial payer enrollment handled completely. Get paneled with priority payer networks faster so you can start billing without delay.</p>
+      <a href="credentialing.html">Explore Credentialing <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal">
+      <div class="shg-icon"><i class="fa-solid fa-code"></i></div>
+      <h3>Medical Coding</h3>
+      <p>AAPC and AHIMA certified coders across ICD-10-CM, ICD-10-PCS, CPT, and HCPCS. Specialty-specific expertise ensures maximum accurate reimbursement.</p>
+      <a href="medical-coding.html">Explore Coding <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal stagger-1">
+      <div class="shg-icon"><i class="fa-solid fa-user-doctor"></i></div>
+      <h3>Physician Billing</h3>
+      <p>Tailored billing solutions for solo providers, multi-provider groups, and concierge practices. E&amp;M optimization and specialty coding expertise included.</p>
+      <a href="physician-billing.html">Explore Physician Billing <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <div class="shg-card reveal stagger-2">
+      <div class="shg-icon"><i class="fa-solid fa-hospital"></i></div>
+      <h3>Hospital Billing</h3>
+      <p>Inpatient DRG optimization and outpatient HOPD compliance. UB-04 claims, ICD-10-PCS coding, APC assignment, and RAC audit defense — all managed.</p>
+      <a href="hospital-billing.html">Explore Hospital Billing <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PHASED INTEGRATION HUBS -->
+<section style="padding:100px 0;background:#fff">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px">
+    <div class="hero-badge-glam" style="display:inline-flex;margin-bottom:16px">Structured Growth</div>
+    <h2 class="section-title serif">Our Strategic <span class="text-shimmer-gold">Integration Phases</span></h2>
+    <p class="section-subtitle" style="margin:0 auto">Explore our comprehensive capabilities across specialized billing, technology, operations, and staffing.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:30px">
+    <!-- Phase 1 -->
+    <div class="shg-card reveal" style="background:var(--clr-surface)">
+      <div class="shg-icon"><i class="fa-solid fa-microscope"></i></div>
+      <div class="hero-badge-glam" style="display:inline-block;margin-bottom:10px;font-size:0.8rem;padding:4px 12px">Phase 1</div>
+      <h3 style="font-size:1.6rem">Specialized Care Billing</h3>
+      <p style="font-size:1.05rem">Complex care modalities including Laboratory, Imaging & Radiology, Chronic Care Management, and Remote Patient Monitoring.</p>
+      <a href="phase-1-specialized-care.html" style="font-size:1.1rem;margin-top:auto">Explore Phase 1 <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <!-- Phase 2 -->
+    <div class="shg-card reveal stagger-1" style="background:var(--clr-surface)">
+      <div class="shg-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <div class="hero-badge-glam" style="display:inline-block;margin-bottom:10px;font-size:0.8rem;padding:4px 12px">Phase 2</div>
+      <h3 style="font-size:1.6rem">Healthcare Tech & Automation</h3>
+      <p style="font-size:1.05rem">Integrated Practice Management software, clinical documentation systems, and custom claim scrubbing rules.</p>
+      <a href="phase-2-billing-tech.html" style="font-size:1.1rem;margin-top:auto">Explore Phase 2 <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <!-- Phase 3 -->
+    <div class="shg-card reveal" style="background:var(--clr-surface)">
+      <div class="shg-icon"><i class="fa-solid fa-gears"></i></div>
+      <div class="hero-badge-glam" style="display:inline-block;margin-bottom:10px;font-size:0.8rem;padding:4px 12px">Phase 3</div>
+      <h3 style="font-size:1.6rem">Advanced Operational Services</h3>
+      <p style="font-size:1.05rem">BI Reporting, HL7 Data Integration, Robotic Process Automation (RPA), and Lean Six Sigma QMS implementations.</p>
+      <a href="phase-3-operational-services.html" style="font-size:1.1rem;margin-top:auto">Explore Phase 3 <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <!-- Phase 4 -->
+    <div class="shg-card reveal stagger-1" style="background:var(--clr-surface)">
+      <div class="shg-icon"><i class="fa-solid fa-user-nurse"></i></div>
+      <div class="hero-badge-glam" style="display:inline-block;margin-bottom:10px;font-size:0.8rem;padding:4px 12px">Phase 4</div>
+      <h3 style="font-size:1.6rem">Staffing & Trust Resources</h3>
+      <p style="font-size:1.05rem">Dedicated remote healthcare staffing solutions, detailed capability overviews, and client satisfaction metrics.</p>
+      <a href="phase-4-staffing-trust.html" style="font-size:1.1rem;margin-top:auto">Explore Phase 4 <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="padding:100px 0;background:#fff">
+<div class="container">
+  <div class="text-center" style="margin-bottom:40px">
+    <h2 class="section-title serif">The Billing Cycle: <span class="text-shimmer-gold">How It Works</span></h2>
+    <p class="section-subtitle" style="margin:0 auto">Our proven 5-step process turns every clinical encounter into collected revenue — reliably and accurately.</p>
+  </div>
+  <div class="step-line reveal">
+    <div class="step-node">
+      <div class="step-circle"><i class="fa-solid fa-user-check"></i></div>
+      <h4 style="font-size:1rem;margin-bottom:8px;color:var(--clr-navy)">Patient Registration &amp; Eligibility</h4>
+      <p style="font-size:.88rem;color:var(--clr-text-muted);margin:0">Insurance verified in real time before every appointment. Demographics confirmed, benefits checked, copays identified.</p>
+    </div>
+    <div class="step-node">
+      <div class="step-circle"><i class="fa-solid fa-file-medical"></i></div>
+      <h4 style="font-size:1rem;margin-bottom:8px;color:var(--clr-navy)">Charge Capture &amp; Coding</h4>
+      <p style="font-size:.88rem;color:var(--clr-text-muted);margin:0">Clinical services translated to accurate ICD-10 and CPT codes by certified coders. No undercoding, no overcoding.</p>
+    </div>
+    <div class="step-node">
+      <div class="step-circle"><i class="fa-solid fa-broom"></i></div>
+      <h4 style="font-size:1rem;margin-bottom:8px;color:var(--clr-navy)">Claim Scrubbing &amp; Submission</h4>
+      <p style="font-size:.88rem;color:var(--clr-text-muted);margin:0">Every claim checked against comprehensive payer-specific rules before electronic submission to the clearinghouse.</p>
+    </div>
+    <div class="step-node">
+      <div class="step-circle"><i class="fa-solid fa-comments-dollar"></i></div>
+      <h4 style="font-size:1rem;margin-bottom:8px;color:var(--clr-navy)">Payment Posting &amp; Follow-Up</h4>
+      <p style="font-size:.88rem;color:var(--clr-text-muted);margin:0">ERA/EOB processed and posted. Underpayments identified and disputed. Denials appealed within 24 hours.</p>
+    </div>
+    <div class="step-node">
+      <div class="step-circle"><i class="fa-solid fa-chart-line"></i></div>
+      <h4 style="font-size:1rem;margin-bottom:8px;color:var(--clr-navy)">Reporting &amp; Optimization</h4>
+      <p style="font-size:.88rem;color:var(--clr-text-muted);margin:0">Monthly KPI dashboards. Collection rates, denial trends, A/R aging, and payer performance tracked and shared.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- WHY OUTSOURCE -->
+<section style="padding:100px 0;background:var(--clr-navy-dark)">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px">
+    <h2 class="section-title serif text-white">Why Practices <span class="text-shimmer-gold">Choose to Outsource</span></h2>
+    <p style="color:rgba(255,255,255,.7);font-size:1.1rem;max-width:700px;margin:0 auto">In-house billing teams are expensive, hard to train, and vulnerable to turnover. When your biller leaves, your cash flow suffers for weeks. Probiz is the solution.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <i class="fa-solid fa-piggy-bank" style="font-size:2rem;color:var(--clr-gold);margin-bottom:16px;display:block"></i>
+      <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--clr-navy)">Eliminate Overhead Costs</h3>
+      <p style="font-size:.95rem;line-height:1.7;color:var(--clr-text-muted)">No salaries, no benefits, no recruitment, no training costs. You pay only for results — on a percentage of collections model that aligns our success with yours.</p>
+    </div>
+    <div class="why-card reveal stagger-1">
+      <i class="fa-solid fa-certificate" style="font-size:2rem;color:var(--clr-gold);margin-bottom:16px;display:block"></i>
+      <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--clr-navy)">Certified Expertise On Day One</h3>
+      <p style="font-size:.95rem;line-height:1.7;color:var(--clr-text-muted)">AAPC and AHIMA certified coders with specialty-specific training. You benefit from deep expertise without spending months recruiting and training staff.</p>
+    </div>
+    <div class="why-card reveal stagger-2">
+      <i class="fa-solid fa-calendar-check" style="font-size:2rem;color:var(--clr-gold);margin-bottom:16px;display:block"></i>
+      <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--clr-navy)">Always Up to Date</h3>
+      <p style="font-size:.95rem;line-height:1.7;color:var(--clr-text-muted)">Payer policies change constantly. Our team tracks LCD/NCD updates, fee schedule changes, and coding guideline revisions so you never fall behind.</p>
+    </div>
+    <div class="why-card reveal">
+      <i class="fa-solid fa-magnifying-glass-chart" style="font-size:2rem;color:var(--clr-gold);margin-bottom:16px;display:block"></i>
+      <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--clr-navy)">Full Financial Transparency</h3>
+      <p style="font-size:.95rem;line-height:1.7;color:var(--clr-text-muted)">Real-time dashboards and monthly reports give you complete visibility into your revenue cycle performance. You always know exactly what's happening with your money.</p>
+    </div>
+    <div class="why-card reveal stagger-1">
+      <i class="fa-solid fa-shield-halved" style="font-size:2rem;color:var(--clr-gold);margin-bottom:16px;display:block"></i>
+      <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--clr-navy)">HIPAA-Compliant Infrastructure</h3>
+      <p style="font-size:.95rem;line-height:1.7;color:var(--clr-text-muted)">Full BAA executed on day one. Encrypted data handling, zero-trust network access, and a documented compliance program that protects your practice from liability.</p>
+    </div>
+    <div class="why-card reveal stagger-2">
+      <i class="fa-solid fa-arrows-up-to-line" style="font-size:2rem;color:var(--clr-gold);margin-bottom:16px;display:block"></i>
+      <h3 style="font-size:1.2rem;margin-bottom:12px;color:var(--clr-navy)">Scales With Your Practice</h3>
+      <p style="font-size:.95rem;line-height:1.7;color:var(--clr-text-muted)">Adding a provider, opening a new location, or expanding to a new specialty? Our team scales immediately. No recruitment lag, no training delays — just capacity.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SPECIALTIES -->
+<section style="padding:100px 0;background:#fff">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px">
+    <h2 class="section-title serif">Specialties We <span class="text-shimmer-gold">Support</span></h2>
+    <p class="section-subtitle" style="margin:0 auto">Dedicated specialty pods with deep domain expertise across every major clinical discipline.</p>
+  </div>
+  <div class="spec-grid reveal">
+    <div class="spec-item"><i class="fa-solid fa-heart-pulse"></i><span>Cardiology</span></div>
+    <div class="spec-item"><i class="fa-solid fa-bone"></i><span>Orthopedics</span></div>
+    <div class="spec-item"><i class="fa-solid fa-brain"></i><span>Behavioral Health</span></div>
+    <div class="spec-item"><i class="fa-solid fa-x-ray"></i><span>Radiology</span></div>
+    <div class="spec-item"><i class="fa-solid fa-microscope"></i><span>Dermatology</span></div>
+    <div class="spec-item"><i class="fa-solid fa-stethoscope"></i><span>Internal Medicine</span></div>
+    <div class="spec-item"><i class="fa-solid fa-baby"></i><span>Pediatrics</span></div>
+    <div class="spec-item"><i class="fa-solid fa-ribbon"></i><span>Oncology</span></div>
+    <div class="spec-item"><i class="fa-solid fa-venus"></i><span>OB-GYN</span></div>
+    <div class="spec-item"><i class="fa-solid fa-syringe"></i><span>General Surgery</span></div>
+    <div class="spec-item"><i class="fa-solid fa-droplet"></i><span>Nephrology</span></div>
+    <div class="spec-item"><i class="fa-solid fa-circle-h"></i><span>Urgent Care</span></div>
+    <div class="spec-item"><i class="fa-solid fa-lungs"></i><span>Pulmonology</span></div>
+    <div class="spec-item"><i class="fa-solid fa-pills"></i><span>Pain Management</span></div>
+    <div class="spec-item"><i class="fa-solid fa-eye"></i><span>Ophthalmology</span></div>
+  </div>
+  <div class="text-center" style="margin-top:30px">
+    <a href="specialties.html" class="btn btn-outline" style="border-color:var(--clr-navy);color:var(--clr-navy)">View All Specialties <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>
+</section>
+<!-- COMPLIANCE STANDARDS -->
+<section style="padding:100px 0;background:var(--clr-navy-dark)">
+<div class="container text-center reveal">
+  <div class="hero-badge-glam" style="margin-bottom:20px">Security &amp; Compliance</div>
+  <h2 class="section-title serif text-white" style="margin-bottom:20px">Built on a <span class="text-shimmer-gold">Foundation of Compliance</span></h2>
+  <p style="color:rgba(255,255,255,.75);font-size:1.1rem;max-width:720px;margin:0 auto 40px;line-height:1.8">Every aspect of our operations is built around regulatory compliance. We don't just meet the minimum — we maintain institutional-grade security and compliance practices that protect your practice and your patients.</p>
+  <div class="compliance-badges">
+    <div class="cbadge"><i class="fa-solid fa-shield-halved" style="margin-right:8px;color:var(--clr-gold)"></i>HIPAA Compliant</div>
+    <div class="cbadge"><i class="fa-solid fa-file-contract" style="margin-right:8px;color:var(--clr-gold)"></i>Business Associate Agreement</div>
+    <div class="cbadge"><i class="fa-solid fa-lock" style="margin-right:8px;color:var(--clr-gold)"></i>AES-256 Encryption</div>
+    <div class="cbadge"><i class="fa-solid fa-code-branch" style="margin-right:8px;color:var(--clr-gold)"></i>ICD-10 &amp; CPT Certified</div>
+    <div class="cbadge"><i class="fa-solid fa-stethoscope" style="margin-right:8px;color:var(--clr-gold)"></i>CMS Guidelines</div>
+    <div class="cbadge"><i class="fa-solid fa-gavel" style="margin-right:8px;color:var(--clr-gold)"></i>OIG Exclusion Checks</div>
+  </div>
+  <a href="hipaa-compliance.html" class="btn btn-gold" style="margin-top:20px;padding:16px 36px">View Our Compliance Framework <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:100px 0;background:var(--clr-surface)">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px">
+    <h2 class="section-title serif">Frequently Asked <span class="text-shimmer-gold">Questions</span></h2>
+    <p class="section-subtitle" style="margin:0 auto">Quick answers to the questions practices ask most before outsourcing their billing.</p>
+  </div>
+  <div class="faq-acc">
+    <div class="facc-item reveal">
+      <input type="checkbox" id="f1" class="facc-input"/>
+      <label for="f1" class="facc-label">What is the difference between medical billing and Revenue Cycle Management?</label>
+      <div class="facc-body"><p>Medical billing refers specifically to the process of submitting claims to payers and collecting payment for services rendered. Revenue Cycle Management (RCM) is the broader, end-to-end financial process — it starts at patient registration and insurance verification and ends only when all balances are fully resolved. RCM includes billing, but also encompasses scheduling, prior authorization, coding, denial management, reporting, and strategic optimization of your entire financial workflow.</p></div>
+    </div>
+    <div class="facc-item reveal">
+      <input type="checkbox" id="f2" class="facc-input"/>
+      <label for="f2" class="facc-label">Do I need to change my EHR or Practice Management Software?</label>
+      <div class="facc-body"><p>In most cases, no. Our team is experienced with all major EHR and PMS platforms including Epic, Cerner, eClinicalWorks, AdvancedMD, Athenahealth, Kareo, and many others. We log in to your existing system via secure, encrypted connections and work within your established clinical workflows — so there's zero disruption to your front-office operations.</p></div>
+    </div>
+    <div class="facc-item reveal">
+      <input type="checkbox" id="f3" class="facc-input"/>
+      <label for="f3" class="facc-label">How long does the onboarding process take?</label>
+      <div class="facc-body"><p>Our structured onboarding process typically takes 2 to 4 weeks, depending on the complexity of your practice and your current software environment. We operate in parallel during the transition period — meaning your claims continue going out without interruption while we integrate our processes. By the time the transition is complete, everything is seamlessly in place with no gap in your cash flow.</p></div>
+    </div>
+    <div class="facc-item reveal">
+      <input type="checkbox" id="f4" class="facc-input"/>
+      <label for="f4" class="facc-label">How is your service priced?</label>
+      <div class="facc-body"><p>Our primary model is a percentage of net collections — meaning we only earn when you get paid. This perfectly aligns our incentives with yours. The exact percentage depends on your practice size, specialty, and monthly claim volume. We provide a fully transparent proposal with no hidden fees. Contact us for a custom quote tailored to your specific situation.</p></div>
+    </div>
+    <div class="facc-item reveal">
+      <input type="checkbox" id="f5" class="facc-input"/>
+      <label for="f5" class="facc-label">How do you handle denied claims?</label>
+      <div class="facc-body"><p>Denied claims are reviewed by our denial management specialists within 24 hours of receipt. We identify the root cause, correct the issue, and file a formal appeal with the payer within the required timeframe. Beyond individual appeals, we track denial patterns and implement preventive fixes to reduce future denials from the same root cause — ensuring your first-pass rate improves over time.</p></div>
+    </div>
+    <div class="facc-item reveal">
+      <input type="checkbox" id="f6" class="facc-input"/>
+      <label for="f6" class="facc-label">Is my patient data secure with Probiz?</label>
+      <div class="facc-body"><p>Absolutely. We operate under a comprehensive Business Associate Agreement (BAA) as required by HIPAA. All patient data is protected with AES-256 encryption in transit and at rest. We use zero-trust network access, role-based permissions, and multi-factor authentication on all systems. We never download or store ePHI on unauthorized local machines — all access is through secure, logged, encrypted connections to your own systems.</p></div>
+    </div>
+  </div>
+  <div class="text-center" style="margin-top:30px">
+    <a href="faqs.html" class="btn btn-outline" style="border-color:var(--clr-navy);color:var(--clr-navy)">View All FAQs <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section style="padding:110px 0;background:linear-gradient(135deg,var(--clr-navy-dark),var(--clr-navy));text-align:center">
+<div class="container reveal">
+  <img src="../assets/rcm_workflow_diagram.png" alt="Revenue Cycle" style="width:100%;max-width:600px;border-radius:20px;box-shadow:var(--shadow-deep);margin-bottom:50px"/>
+  <h2 class="section-title serif text-white" style="font-size:3.5rem">Ready to Maximize Your <span class="text-shimmer-gold">Practice Revenue?</span></h2>
+  <p style="color:rgba(255,255,255,.8);font-size:1.2rem;max-width:700px;margin:0 auto 50px;line-height:1.75">Get a free, no-obligation revenue cycle audit. We'll analyse your current billing performance, identify revenue leakage, and show you exactly what better billing could mean for your practice.</p>
+  <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap">
+    <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:20px 48px;font-size:1.15rem">Get My Free Revenue Audit</a>
+    <a href="faqs.html" class="btn btn-outline" style="padding:20px 48px;border-color:rgba(255,255,255,.35);color:#fff;font-size:1.15rem">Read FAQs</a>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+  <span style="color:#fff;font-size:26px;font-weight:800;display:block;margin-bottom:16px">PROBIZ</span>
+  <p>Delivering high-performance revenue cycle management and medical billing solutions to healthcare providers worldwide.</p>
+</div>
+<div class="footer-col">
+  <h4>Services</h4>
+  <ul>
+    <li><a href="revenue-cycle-management.html">Revenue Cycle</a></li>
+    <li><a href="medical-coding.html">Medical Coding</a></li>
+    <li><a href="denial-management.html">Denial Management</a></li>
+    <li><a href="ar-recovery.html">A/R Recovery</a></li>
+    <li><a href="credentialing.html">Credentialing</a></li>
+  </ul>
+</div>
+<div class="footer-col">
+  <h4>Specialties</h4>
+  <ul>
+    <li><a href="specialties.html">All Specialties</a></li>
+    <li><a href="physician-billing.html">Physician Billing</a></li>
+    <li><a href="hospital-billing.html">Hospital Billing</a></li>
+    <li><a href="hipaa-compliance.html">HIPAA Compliance</a></li>
+    <li><a href="faqs.html">FAQs</a></li>
+  </ul>
+</div>
+<div class="footer-col">
+  <h4>Contact</h4>
+  <ul>
+    <li><a href="mailto:info@probizsms.com"><i class="fa-solid fa-envelope" style="width:20px;margin-right:8px"></i>info@probizsms.com</a></li>
+    <li><a href="tel:044181222"><i class="fa-solid fa-phone" style="width:20px;margin-right:8px"></i>044181222</a></li>
+    <li><a href="https://wa.me/971544433410" target="_blank"><i class="fa-brands fa-whatsapp" style="width:20px;margin-right:8px"></i>+971 54 443 3410</a></li>
+    <li><a href="../contact.html"><i class="fa-solid fa-location-dot" style="width:20px;margin-right:8px"></i>Office 1904, Al Zarooni Building 3, Al Mamzar, Dubai, UAE</a></li>
+  </ul>
+</div>
+</div>
+<div style="padding-top:40px;border-top:1px solid rgba(255,255,255,.08);text-align:center">
+  <p style="font-size:.85rem;margin:0;color:rgba(255,255,255,.4)">© 2026 Probiz. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>

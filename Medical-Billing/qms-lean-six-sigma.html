@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Quality Management Systems & Lean Six Sigma | Probiz</title>
+<link rel="icon" type="image/png" href="../favicon-probiz-removebg-preview.png"/>
+<meta name="description" content="Optimize your healthcare operations with Probiz QMS. We apply Lean Six Sigma methodologies to eliminate waste, reduce errors, and accelerate revenue cycles."/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../styles.css" rel="stylesheet"/>
+<style>
+.six-sigma-visual{position:relative;width:100%;height:100%;min-height:400px;display:flex;align-items:center;justify-content:center}
+.sigma-circle{width:300px;height:300px;border-radius:50%;border:4px solid rgba(212,175,55,0.2);position:relative;display:flex;align-items:center;justify-content:center;animation:spin 30s linear infinite}
+.sigma-inner{font-size:5rem;color:var(--clr-gold);font-family:serif;font-style:italic;position:absolute;animation:reverse-spin 30s linear infinite}
+.s-node{width:50px;height:50px;background:var(--clr-navy-dark);border-radius:50%;position:absolute;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;border:2px solid var(--clr-gold)}
+.s-node:nth-child(1){top:-25px;left:50%;transform:translateX(-50%)}
+.s-node:nth-child(2){bottom:-25px;left:50%;transform:translateX(-50%)}
+.s-node:nth-child(3){left:-25px;top:50%;transform:translateY(-50%)}
+.s-node:nth-child(4){right:-25px;top:50%;transform:translateY(-50%)}
+@keyframes spin{100%{transform:rotate(360deg)}}
+@keyframes reverse-spin{100%{transform:rotate(-360deg)}}
+
+.dmaic-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin:80px 0}
+.dmaic-card{background:#fff;border-radius:20px;padding:30px 20px;text-align:center;border:1px solid rgba(15,29,74,0.06);box-shadow:var(--shadow-soft);transition:.4s;position:relative}
+.dmaic-card:hover{transform:translateY(-10px);box-shadow:var(--shadow-hover);border-color:var(--clr-gold)}
+.d-letter{font-size:3rem;font-weight:900;color:var(--clr-navy);opacity:0.1;position:absolute;top:10px;left:20px;line-height:1}
+.dmaic-card h3{color:var(--clr-navy);font-size:1.2rem;margin-bottom:10px;position:relative;z-index:2}
+.dmaic-card p{color:var(--clr-text-muted);font-size:.9rem;line-height:1.6;margin:0;position:relative;z-index:2}
+@media(max-width:992px){.dmaic-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){.dmaic-grid{grid-template-columns:1fr}}
+
+.qms-benefits{background:linear-gradient(135deg,var(--clr-navy-dark),var(--clr-navy));border-radius:30px;padding:80px 40px;margin:80px 0;position:relative;overflow:hidden}
+.qms-benefits::after{content:'\\f200';font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;top:50%;left:-50px;transform:translateY(-50%);font-size:30rem;color:rgba(255,255,255,0.02);pointer-events:none}
+.qb-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;position:relative;z-index:2}
+.qb-item{display:flex;align-items:flex-start;gap:20px}
+.qb-icon{width:60px;height:60px;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.3);border-radius:16px;display:flex;align-items:center;justify-content:center;color:var(--clr-gold);font-size:1.5rem;flex-shrink:0}
+.qb-text h4{color:#fff;font-size:1.3rem;margin-bottom:10px}
+.qb-text p{color:rgba(255,255,255,0.8);font-size:1rem;line-height:1.6;margin:0}
+@media(max-width:900px){.qb-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="bg-surface">
+<header class="header" id="header">
+<div class="container nav-container">
+<a class="logo" href="../index.html"><img alt="Probiz Logo" src="../Probiz logo.png"/></a>
+<nav class="navbar"><ul class="nav-menu">
+<li><a class="nav-link" href="../index.html">Home</a></li>
+<li><a class="nav-link" href="../services.html">Industries &amp; Services</a></li>
+<li class="nav-item-dropdown">
+<a class="nav-link active" href="index.html">Medical Billing <i class="fa-solid fa-chevron-down" style="font-size:.8rem;margin-left:5px"></i></a>
+<div class="nav-dropdown-menu">
+<a href="revenue-cycle-management.html">Revenue Cycle Management</a>
+<a href="medical-billing-services.html">Medical Billing Services</a>
+<a href="claims-submission.html">Claims Submission</a>
+<a href="denial-management.html">Denial Management</a>
+<a href="ar-recovery.html">AR Recovery</a>
+<a href="credentialing.html">Provider Credentialing</a>
+<a href="medical-coding.html">Medical Coding</a>
+<a href="physician-billing.html">Physician Billing</a>
+<a href="hospital-billing.html">Hospital Billing</a>
+<a href="specialties.html">Specialties Support</a>
+<a href="hipaa-compliance.html">HIPAA Compliance</a>
+<a href="faqs.html">FAQs</a>
+</div>
+</li>
+<li><a class="nav-link" href="../partnerships.html">Our Partnerships</a></li>
+<li><a class="nav-link" href="../career.html">Career</a></li>
+<li><a class="nav-link" href="../about.html">About</a></li>
+<li><a class="nav-link" href="../contact.html">Contact</a></li>
+</ul></nav>
+<div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+</div>
+</header>
+
+<section class="subpage-hero" style="min-height:80vh;display:flex;align-items:center;padding:160px 0 100px;overflow:hidden">
+<div class="subpage-hero-bg" style="background-image:url('../assets/hospital_administration_clean_1777730972184.png');background-position:top;opacity:0.4"></div>
+<div class="container" style="position:relative;z-index:3">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+    <div class="reveal">
+      <div class="hero-badge-glam" style="margin-bottom:24px">Operational Excellence</div>
+      <h1 class="text-white serif" style="font-size:4.5rem;font-weight:900;line-height:1.1;margin-bottom:24px">
+        <span class="text-shimmer-gold">QMS & Lean</span> Six Sigma
+      </h1>
+      <p class="text-white-muted" style="font-size:1.3rem;max-width:700px;line-height:1.7;margin-bottom:40px">
+        We apply advanced industrial engineering principles to healthcare administration. By eliminating process waste and reducing defect rates, we build highly profitable, scalable medical practices.
+      </p>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:18px 40px;font-size:1.05rem">Request an Operational Audit <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="six-sigma-visual reveal stagger-1">
+      <div class="sigma-circle">
+        <div class="s-node"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="s-node"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="s-node"><i class="fa-solid fa-gears"></i></div>
+        <div class="s-node"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="sigma-inner">σ</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section style="padding:100px 0;background:#fff">
+<div class="container">
+  <div class="text-center reveal" style="margin-bottom:50px">
+    <h2 class="serif" style="font-size:3rem;color:var(--clr-navy)">The <span class="text-shimmer-gold">DMAIC</span> Framework</h2>
+    <p style="font-size:1.1rem;line-height:1.8;color:var(--clr-text-muted);max-width:800px;margin:20px auto 0">Our certified Lean Six Sigma Black Belts analyze your revenue cycle using the proven DMAIC data-driven improvement cycle to ensure permanent resolution of systemic bottlenecks.</p>
+  </div>
+
+  <div class="dmaic-grid">
+    <div class="dmaic-card reveal">
+      <div class="d-letter">D</div>
+      <div style="margin-top:20px">
+        <h3>Define</h3>
+        <p>We map your current administrative workflows to define the exact problem areas—such as front-desk authorization delays or high coding error rates.</p>
+      </div>
+    </div>
+    <div class="dmaic-card reveal stagger-1">
+      <div class="d-letter">M</div>
+      <div style="margin-top:20px">
+        <h3>Measure</h3>
+        <p>We quantify the problem by establishing baseline metrics (e.g., current Days in A/R, First Pass Resolution rate, time spent on holds).</p>
+      </div>
+    </div>
+    <div class="dmaic-card reveal stagger-2">
+      <div class="d-letter">A</div>
+      <div style="margin-top:20px">
+        <h3>Analyze</h3>
+        <p>Using statistical tools, we identify the root cause of the defects, determining whether errors stem from software limitations, lack of training, or poor process design.</p>
+      </div>
+    </div>
+    <div class="dmaic-card reveal stagger-3">
+      <div class="d-letter">I</div>
+      <div style="margin-top:20px">
+        <h3>Improve</h3>
+        <p>We implement targeted solutions—deploying RPA bots, revising clinical intake forms, or adjusting software rules—to eliminate the identified root causes.</p>
+      </div>
+    </div>
+    <div class="dmaic-card reveal stagger-4">
+      <div class="d-letter">C</div>
+      <div style="margin-top:20px">
+        <h3>Control</h3>
+        <p>We establish standard operating procedures (SOPs) and real-time BI dashboards to ensure the new, efficient process is permanently maintained.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section style="padding:40px 0;background:var(--clr-surface)">
+<div class="container">
+  <div class="qms-benefits reveal">
+    <div class="text-center" style="margin-bottom:50px;position:relative;z-index:2">
+      <h2 class="serif text-white" style="font-size:3rem;margin-bottom:20px">The Results of <span class="text-shimmer-gold">Process Control</span></h2>
+    </div>
+    
+    <div class="qb-grid">
+      <div class="qb-item">
+        <div class="qb-icon"><i class="fa-solid fa-trash-can"></i></div>
+        <div class="qb-text">
+          <h4>Elimination of "Muda" (Waste)</h4>
+          <p>We strip out non-value-added steps in your practice. If staff are entering the same patient demographic data into three different systems, we fix the process to eliminate the redundancy.</p>
+        </div>
+      </div>
+      <div class="qb-item">
+        <div class="qb-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <div class="qb-text">
+          <h4>Near-Zero Defect Rates</h4>
+          <p>In Six Sigma, the goal is 3.4 defects per million opportunities. We apply this rigor to your claim generation, pushing your First Pass Acceptance rate to 98% or higher.</p>
+        </div>
+      </div>
+      <div class="qb-item">
+        <div class="qb-icon"><i class="fa-solid fa-stopwatch"></i></div>
+        <div class="qb-text">
+          <h4>Accelerated Velocity</h4>
+          <p>By streamlining patient intake and coding verification, claims drop faster. Faster claim submission directly translates to a massive reduction in your Days in A/R.</p>
+        </div>
+      </div>
+      <div class="qb-item">
+        <div class="qb-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="qb-text">
+          <h4>Standardized Scaling</h4>
+          <p>Growth breaks broken processes. By establishing a rigid Quality Management System (QMS), your practice can add new providers or locations without administrative collapse.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section style="padding:100px 0;background:linear-gradient(135deg,var(--clr-navy-dark),var(--clr-navy));text-align:center">
+<div class="container reveal">
+  <h2 class="section-title serif text-white" style="font-size:3.2rem">Engineer Your Revenue Cycle</h2>
+  <p style="color:rgba(255,255,255,.8);font-size:1.2rem;max-width:700px;margin:0 auto 40px;line-height:1.7">Stop throwing more staff at broken processes. Let Probiz engineer an administrative workflow built for scale and maximum profitability.</p>
+  <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:20px 48px;font-size:1.15rem">Talk to a Six Sigma Consultant</a>
+</div>
+</section>
+
+
+<!-- THE PROBIZ ADVANTAGE -->
+<section style="padding:100px 0;background:var(--clr-surface);">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px;">
+    <div class="hero-badge-glam" style="display:inline-flex;margin-bottom:16px;">The Probiz Advantage</div>
+    <h2 class="section-title serif">Why Leading Practices <span class="text-shimmer-gold">Partner With Us</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">We combine certified expertise with proprietary technology to deliver unmatched revenue cycle performance.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:30px;">
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-bolt" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">Maximized Clean Claim Rates</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">Our advanced rules-based scrubbing engine runs every claim against millions of payer-specific rules before submission, practically eliminating front-end rejections and accelerating your cash flow.</p>
+    </div>
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-user-shield" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">Certified Specialist Teams</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">We don't use generalists. Your account is managed by specialty-specific certified coders who understand the nuances of your exact clinical discipline, ensuring maximum compliant reimbursement.</p>
+    </div>
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-chart-pie" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">Real-Time Financial Analytics</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">Stop waiting for end-of-month reports. Our proprietary BI dashboards give you real-time visibility into collection rates, A/R aging, and denial trends.</p>
+    </div>
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-lock" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">100% EHR Agnostic & Secure</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">We work seamlessly within your existing software via secure, HIPAA-compliant VPNs. Zero data migration required, and zero disruption to your clinical workflow.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SEAMLESS ONBOARDING -->
+<section style="padding:100px 0;background:#fff;">
+<div class="container">
+  <div style="display:grid;grid-template-columns:minmax(0, 1.2fr) minmax(0, 0.8fr);gap:60px;align-items:center;" class="onboarding-grid">
+    <div class="reveal">
+      <h2 class="section-title serif">A Seamless <span class="text-shimmer-gold">Transition Process</span></h2>
+      <p style="font-size:1.1rem;color:var(--clr-text-muted);line-height:1.8;margin-bottom:40px;">Switching billing partners shouldn't disrupt your cash flow. Our meticulously engineered onboarding process ensures a smooth, parallel transition.</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="display:flex;gap:20px;margin-bottom:30px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">1</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Discovery & Integration</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">We establish secure remote access to your EHR/PMS and map your existing workflows without interrupting your current team.</p>
+          </div>
+        </li>
+        <li style="display:flex;gap:20px;margin-bottom:30px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">2</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Historical Analysis</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">We audit your past claims to identify immediate revenue leakage, coding errors, and systemic denial trends.</p>
+          </div>
+        </li>
+        <li style="display:flex;gap:20px;margin-bottom:30px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">3</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Custom Rule Building</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">Our rules-based scrubbing engine is programmed with your specific payer matrix and local coverage determinations to prevent future denials.</p>
+          </div>
+        </li>
+        <li style="display:flex;gap:20px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">4</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Go-Live & Optimization</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">We take over day-to-day operations, instantly applying our optimized workflows to accelerate your cash flow and reduce days in A/R.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="reveal stagger-1" style="background:var(--clr-navy-dark);padding:50px;border-radius:30px;color:#fff;box-shadow:var(--shadow-deep);position:relative;overflow:hidden;text-align:center;">
+      <div style="position:absolute;top:-50px;right:-50px;width:200px;height:200px;background:radial-gradient(circle, rgba(212,175,55,0.2) 0%, transparent 70%);"></div>
+      <i class="fa-solid fa-sack-dollar" style="font-size:4rem;color:var(--clr-gold);margin-bottom:24px;"></i>
+      <h3 style="font-size:2.2rem;margin-bottom:20px;font-family:serif;line-height:1.2;">The Cost of Inaction</h3>
+      <p style="color:rgba(255,255,255,0.8);font-size:1.05rem;line-height:1.7;margin-bottom:30px;">Every day you wait to optimize your revenue cycle, you are losing money to timely filing limits, unappealed denials, and under-coded encounters. Stop accepting revenue leakage as a cost of doing business.</p>
+      <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:16px 32px;font-size:1.05rem;width:100%;">Stop Revenue Leakage Today</a>
+    </div>
+  </div>
+</div>
+<style>
+@media(max-width:900px){ .onboarding-grid{grid-template-columns:1fr !important;} }
+.hover-up:hover { transform:translateY(-8px); border-color:var(--clr-gold) !important; }
+</style>
+</section>
+
+
+
+
+
+<!-- GLOBAL FAQ -->
+<section style="padding:100px 0;background:var(--clr-surface);">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px;">
+    <h2 class="section-title serif">Frequently Asked <span class="text-shimmer-gold">Questions</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">Common questions about our process, integration, and security.</p>
+  </div>
+  <div class="faq-acc" style="max-width:900px;margin:0 auto;">
+    <div class="facc-item reveal">
+      <input type="checkbox" id="gfaq1" class="facc-input" style="display:none;"/>
+      <label for="gfaq1" class="facc-label" style="display:flex;justify-content:space-between;align-items:center;padding:22px 30px;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--clr-navy);background:#fff;border:1px solid rgba(15,29,74,.08);border-radius:12px;">Do I need to change my EHR/EMR software?</label>
+      <div class="facc-body" style="background:#fff;border:1px solid rgba(15,29,74,.08);border-top:none;border-radius:0 0 12px 12px;padding:0 30px;max-height:0;overflow:hidden;transition:.4s;"><p style="padding:20px 0;color:var(--clr-text-muted);line-height:1.7;margin:0;">No. Our team is fully trained on all major platforms including Epic, Cerner, eClinicalWorks, AdvancedMD, Athenahealth, and Kareo. We log directly into your existing system via a secure, HIPAA-compliant connection. Your front office workflow remains entirely unchanged.</p></div>
+    </div>
+    <div class="facc-item reveal" style="margin-top:16px;">
+      <input type="checkbox" id="gfaq2" class="facc-input" style="display:none;"/>
+      <label for="gfaq2" class="facc-label" style="display:flex;justify-content:space-between;align-items:center;padding:22px 30px;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--clr-navy);background:#fff;border:1px solid rgba(15,29,74,.08);border-radius:12px;">How is your service priced?</label>
+      <div class="facc-body" style="background:#fff;border:1px solid rgba(15,29,74,.08);border-top:none;border-radius:0 0 12px 12px;padding:0 30px;max-height:0;overflow:hidden;transition:.4s;"><p style="padding:20px 0;color:var(--clr-text-muted);line-height:1.7;margin:0;">We operate primarily on a percentage-of-collections model. This means we don't get paid until you get paid, perfectly aligning our incentives with your practice's financial success. There are no hidden setup fees or rigid long-term lock-ins.</p></div>
+    </div>
+    <div class="facc-item reveal" style="margin-top:16px;">
+      <input type="checkbox" id="gfaq3" class="facc-input" style="display:none;"/>
+      <label for="gfaq3" class="facc-label" style="display:flex;justify-content:space-between;align-items:center;padding:22px 30px;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--clr-navy);background:#fff;border:1px solid rgba(15,29,74,.08);border-radius:12px;">Is my patient data secure?</label>
+      <div class="facc-body" style="background:#fff;border:1px solid rgba(15,29,74,.08);border-top:none;border-radius:0 0 12px 12px;padding:0 30px;max-height:0;overflow:hidden;transition:.4s;"><p style="padding:20px 0;color:var(--clr-text-muted);line-height:1.7;margin:0;">Absolutely. We are fully HIPAA compliant. We operate under strict Business Associate Agreements (BAAs), utilizing AES-256 encryption, zero-trust network access, and mandatory multi-factor authentication. Patient data is never stored on unauthorized local devices.</p></div>
+    </div>
+  </div>
+</div>
+<style>
+.facc-input:checked ~ .facc-body { max-height: 500px !important; }
+.facc-input:checked ~ .facc-label::after { transform: rotate(45deg); }
+.facc-label::after { content: '\f067'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--clr-gold); transition: .3s; }
+</style>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col">
+  <span style="color:#fff;font-size:26px;font-weight:800;display:block;margin-bottom:16px">PROBIZ</span>
+  <p>Delivering high-performance revenue cycle management and medical billing solutions to healthcare providers worldwide.</p>
+</div>
+<div class="footer-col">
+  <h4>Services</h4>
+  <ul>
+    <li><a href="revenue-cycle-management.html">Revenue Cycle</a></li>
+    <li><a href="medical-coding.html">Medical Coding</a></li>
+    <li><a href="denial-management.html">Denial Management</a></li>
+    <li><a href="ar-recovery.html">A/R Recovery</a></li>
+    <li><a href="credentialing.html">Credentialing</a></li>
+  </ul>
+</div>
+<div class="footer-col">
+  <h4>Specialties</h4>
+  <ul>
+    <li><a href="specialties.html">All Specialties</a></li>
+    <li><a href="physician-billing.html">Physician Billing</a></li>
+    <li><a href="hospital-billing.html">Hospital Billing</a></li>
+    <li><a href="hipaa-compliance.html">HIPAA Compliance</a></li>
+    <li><a href="faqs.html">FAQs</a></li>
+  </ul>
+</div>
+<div class="footer-col">
+  <h4>Contact</h4>
+  <ul>
+    <li><a href="mailto:info@probizsms.com"><i class="fa-solid fa-envelope" style="width:20px;margin-right:8px"></i>info@probizsms.com</a></li>
+    <li><a href="tel:044181222"><i class="fa-solid fa-phone" style="width:20px;margin-right:8px"></i>044181222</a></li>
+    <li><a href="https://wa.me/971544433410" target="_blank"><i class="fa-brands fa-whatsapp" style="width:20px;margin-right:8px"></i>+971 54 443 3410</a></li>
+    <li><a href="../contact.html"><i class="fa-solid fa-location-dot" style="width:20px;margin-right:8px"></i>Office 1904, Al Zarooni Building 3, Al Mamzar, Dubai, UAE</a></li>
+  </ul>
+</div>
+</div>
+<div style="padding-top:40px;border-top:1px solid rgba(255,255,255,.08);text-align:center">
+  <p style="font-size:.85rem;margin:0;color:rgba(255,255,255,.4)">© 2026 Probiz. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
