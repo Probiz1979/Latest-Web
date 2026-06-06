@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HIPAA Compliance & Healthcare Data Security | Probiz</title>
+<link rel="icon" type="image/png" href="../favicon-probiz-removebg-preview.png">
+<meta name="description" content="Probiz maintains strict HIPAA, HITECH, and SOC 2 compliance. Learn how we protect every piece of PHI in your revenue cycle — from submission to storage."/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="../styles.css" rel="stylesheet"/>
+<style>
+  .shield-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin:60px 0; }
+  .shield-card { border-radius:20px; padding:44px 36px; border:1px solid rgba(15,29,74,0.08); background:#fff; box-shadow:var(--shadow-soft); transition:0.4s; position:relative; overflow:hidden; }
+  .shield-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:4px; background:linear-gradient(90deg,var(--clr-gold),var(--clr-primary)); }
+  .shield-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-hover); }
+  .shield-icon { width:64px; height:64px; border-radius:16px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; }
+  .safeguard-tabs { display:flex; gap:0; border-radius:12px; overflow:hidden; border:2px solid rgba(15,29,74,0.1); margin-bottom:40px; }
+  .s-tab { flex:1; padding:18px 20px; text-align:center; cursor:pointer; font-weight:700; font-size:0.95rem; transition:0.3s; color:var(--clr-text-muted); }
+  .s-tab.active { background:var(--clr-navy); color:#fff; }
+  .s-panel { display:none; }
+  .s-panel.active { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .safeguard-item { display:flex; gap:16px; background:var(--clr-surface); border-radius:12px; padding:24px; }
+  .safeguard-item i { color:var(--clr-gold); font-size:1.4rem; flex-shrink:0; margin-top:3px; }
+  .penalty-table { width:100%; border-collapse:collapse; background:#fff; border-radius:16px; overflow:hidden; box-shadow:var(--shadow-soft); }
+  .penalty-table th { background:var(--clr-navy); color:#fff; padding:18px 24px; text-align:left; font-size:0.85rem; text-transform:uppercase; letter-spacing:1px; }
+  .penalty-table td { padding:18px 24px; border-bottom:1px solid rgba(15,29,74,0.06); color:var(--clr-text-muted); }
+  .penalty-table tr:last-child td { border-bottom:none; }
+  .penalty-table td:nth-child(2) { color:var(--clr-navy); font-weight:700; }
+  .penalty-table td:nth-child(3) { color:#dc2626; font-weight:700; }
+  @media(max-width:900px){ .shield-grid,.s-panel.active{grid-template-columns:1fr;} .safeguard-tabs{flex-direction:column;} }
+</style>
+</head>
+<body class="bg-surface">
+<header class="header" id="header">
+<div class="container nav-container">
+<a class="logo" href="../index.html"><img alt="Probiz Logo" src="../Probiz logo.png"/></a>
+<nav class="navbar"><ul class="nav-menu">
+<li><a class="nav-link" href="../index.html">Home</a></li>
+<li><a class="nav-link" href="../services.html">Industries &amp; Services</a></li>
+<li class="nav-item-dropdown">
+<a class="nav-link active" href="index.html">Medical Billing <i class="fa-solid fa-chevron-down" style="font-size:0.8rem;margin-left:5px;"></i></a>
+<div class="nav-dropdown-menu">
+<a href="revenue-cycle-management.html">Revenue Cycle Management</a>
+<a href="medical-billing-services.html">Medical Billing Services</a>
+<a href="claims-submission.html">Claims Submission</a>
+<a href="denial-management.html">Denial Management</a>
+<a href="ar-recovery.html">AR Recovery</a>
+<a href="credentialing.html">Provider Credentialing</a>
+<a href="medical-coding.html">Medical Coding</a>
+<a href="physician-billing.html">Physician Billing</a>
+<a href="hospital-billing.html">Hospital Billing</a>
+<a href="specialties.html">Specialties Support</a>
+<a href="hipaa-compliance.html">HIPAA Compliance</a>
+<a href="faqs.html">FAQs</a>
+</div>
+</li>
+<li><a class="nav-link" href="../partnerships.html">Our Partnerships</a></li>
+<li><a class="nav-link" href="../career.html">Career</a></li>
+<li><a class="nav-link" href="../about.html">About</a></li>
+<li><a class="nav-link" href="../contact.html">Contact</a></li>
+</ul></nav>
+<div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="subpage-hero" style="min-height:85vh;display:flex;align-items:center;padding:140px 0 100px;">
+<div class="subpage-hero-bg" style="background-image:url('../assets/secure_healthcare_data_1777730603228.png');"></div>
+<div class="container" style="position:relative;z-index:2;">
+  <div class="reveal">
+    <div class="hero-badge-glam" style="margin-bottom:28px;">HIPAA · HITECH · SOC 2 Compliant</div>
+    <h1 class="section-title text-white serif" style="font-size:5rem;margin-bottom:28px;line-height:1.05;">Security &amp; <span class="text-shimmer-gold">HIPAA Compliance</span></h1>
+    <p class="text-white-muted" style="font-size:1.35rem;max-width:680px;line-height:1.7;margin-bottom:44px;">Every piece of Protected Health Information that passes through our systems is treated as a non-negotiable trust. We don't merely comply with HIPAA — we engineer our entire operation around it.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;">
+      <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:18px 40px;font-size:1.1rem;">Discuss Our Security Program <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#safeguards" class="btn btn-outline" style="padding:18px 40px;font-size:1.1rem;border-color:rgba(255,255,255,0.3);color:#fff;">View Safeguards</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 3 PILLARS -->
+<section style="padding:100px 0;background:#fff;">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px;">
+    <h2 class="section-title serif">Three Layers of <span class="text-shimmer-gold">Protection</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">HIPAA mandates three types of safeguards. We go beyond minimum standards in each category.</p>
+  </div>
+  <div class="shield-grid">
+    <div class="shield-card reveal stagger-1">
+      <div class="shield-icon" style="background:rgba(15,29,74,0.08);"><i class="fa-solid fa-gear" style="color:var(--clr-navy);font-size:1.8rem;"></i></div>
+      <h3 style="font-size:1.5rem;margin-bottom:16px;">Administrative Safeguards</h3>
+      <p style="line-height:1.8;">Policies, procedures, and workforce controls that govern how PHI is accessed and managed. We maintain a dedicated Privacy Officer, conduct documented risk assessments annually, and require all staff to complete HIPAA certification before accessing any patient data.</p>
+      <ul style="margin-top:20px;display:grid;gap:10px;">
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Annual Risk Assessment &amp; Remediation</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Dedicated Privacy &amp; Security Officers</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Contingency &amp; Breach Response Plans</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Signed BAAs with all PHI-touching vendors</li>
+      </ul>
+    </div>
+    <div class="shield-card reveal stagger-2">
+      <div class="shield-icon" style="background:rgba(37,99,235,0.08);"><i class="fa-solid fa-lock" style="color:var(--clr-primary);font-size:1.8rem;"></i></div>
+      <h3 style="font-size:1.5rem;margin-bottom:16px;">Technical Safeguards</h3>
+      <p style="line-height:1.8;">The technology architecture that controls electronic PHI access and transmission. We implement enterprise-grade security infrastructure that exceeds what most hospital systems deploy for their own data.</p>
+      <ul style="margin-top:20px;display:grid;gap:10px;">
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> AES-256 Encryption at Rest &amp; in Transit</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Multi-Factor Authentication (MFA) Required</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Real-Time Audit Logging of All PHI Access</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Zero-Trust Network Architecture</li>
+      </ul>
+    </div>
+    <div class="shield-card reveal stagger-3">
+      <div class="shield-icon" style="background:rgba(15,118,110,0.08);"><i class="fa-solid fa-building-shield" style="color:var(--clr-teal);font-size:1.8rem;"></i></div>
+      <h3 style="font-size:1.5rem;margin-bottom:16px;">Physical Safeguards</h3>
+      <p style="line-height:1.8;">The controls that protect the physical environments where PHI is processed and stored. Our facilities are access-controlled at multiple layers — from building perimeter to individual workstation level.</p>
+      <ul style="margin-top:20px;display:grid;gap:10px;">
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Biometric-Controlled Access to Work Floors</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> 24/7 CCTV Security Monitoring</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> Locked, Access-Controlled Server Rooms</li>
+        <li style="display:flex;gap:10px;font-size:0.95rem;"><i class="fa-solid fa-check" style="color:var(--clr-gold);"></i> NIST-Compliant Data Destruction Protocols</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SAFEGUARDS TABS -->
+<section id="safeguards" style="padding:100px 0;background:var(--clr-surface);">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px;">
+    <h2 class="section-title serif">Our Security <span class="text-shimmer-gold">Protocols in Detail</span></h2>
+  </div>
+  <div class="safeguard-tabs" id="safeguardTabs">
+    <div class="s-tab active" onclick="showTab(0)">Data Encryption</div>
+    <div class="s-tab" onclick="showTab(1)">Access Control</div>
+    <div class="s-tab" onclick="showTab(2)">Incident Response</div>
+    <div class="s-tab" onclick="showTab(3)">Staff Training</div>
+  </div>
+  <div class="s-panel active" id="panel0">
+    <div class="safeguard-item"><i class="fa-solid fa-lock"></i><div><h4 style="margin-bottom:8px;">End-to-End Encryption</h4><p style="margin:0;font-size:0.95rem;">All PHI is encrypted using AES-256 standard — both when stored on our servers and during transmission to payers, clearinghouses, and providers. TLS 1.3 is enforced on all external connections.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-database"></i><div><h4 style="margin-bottom:8px;">Encrypted Backup Infrastructure</h4><p style="margin:0;font-size:0.95rem;">Redundant, geographically distributed encrypted backups ensure zero data loss and full disaster recovery capability with RPO &lt;1 hour and RTO &lt;4 hours.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-mobile-screen"></i><div><h4 style="margin-bottom:8px;">Mobile Device Management</h4><p style="margin:0;font-size:0.95rem;">All mobile endpoints accessing PHI are enrolled in our MDM platform with full-disk encryption, remote wipe capability, and geofencing restrictions.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-envelope-circle-check"></i><div><h4 style="margin-bottom:8px;">Secure Email &amp; File Transfer</h4><p style="margin:0;font-size:0.95rem;">PHI is never transmitted via standard email. We use SFTP, encrypted email gateways, and secure patient portal APIs that meet 21 CFR Part 11 standards.</p></div></div>
+  </div>
+  <div class="s-panel" id="panel1">
+    <div class="safeguard-item"><i class="fa-solid fa-key"></i><div><h4 style="margin-bottom:8px;">Role-Based Access Control (RBAC)</h4><p style="margin:0;font-size:0.95rem;">Staff are granted the minimum necessary PHI access required for their specific role. A coder sees only the data needed for their queue — nothing more.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-fingerprint"></i><div><h4 style="margin-bottom:8px;">Multi-Factor Authentication</h4><p style="margin:0;font-size:0.95rem;">MFA is mandatory for all system access — no exceptions. Every login requires a second-factor verification through our authenticator platform.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-eye"></i><div><h4 style="margin-bottom:8px;">24/7 Audit Log Monitoring</h4><p style="margin:0;font-size:0.95rem;">Every PHI access event is logged with user ID, timestamp, and action taken. Our security team reviews anomaly reports daily via automated SIEM alerts.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-ban"></i><div><h4 style="margin-bottom:8px;">Automatic Session Termination</h4><p style="margin:0;font-size:0.95rem;">Workstations auto-lock after 5 minutes of inactivity. Sessions are terminated automatically after 15 minutes — preventing unauthorized access to unattended screens.</p></div></div>
+  </div>
+  <div class="s-panel" id="panel2">
+    <div class="safeguard-item"><i class="fa-solid fa-bell"></i><div><h4 style="margin-bottom:8px;">72-Hour Breach Detection Goal</h4><p style="margin:0;font-size:0.95rem;">Our SOC monitors for indicators of compromise around the clock. Our target detection-to-containment window is under Rapid — aligned with EU GDPR standards even for US operations.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-file-medical"></i><div><h4 style="margin-bottom:8px;">HIPAA Breach Notification Compliance</h4><p style="margin:0;font-size:0.95rem;">In the event of any confirmed breach, we manage the full HIPAA notification workflow — provider notification within 60 days, HHS reporting, and media notice for large breaches (&gt;500 individuals).</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-shield"></i><div><h4 style="margin-bottom:8px;">Business Associate Agreement (BAA)</h4><p style="margin:0;font-size:0.95rem;">Every client engagement begins with a signed BAA that clearly defines our security obligations, liability boundaries, and notification responsibilities as your Business Associate.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-clipboard-list"></i><div><h4 style="margin-bottom:8px;">Documented Incident Response Plan</h4><p style="margin:0;font-size:0.95rem;">We maintain and regularly test a documented IRP with defined roles, communication trees, and escalation procedures — validated by annual tabletop exercises.</p></div></div>
+  </div>
+  <div class="s-panel" id="panel3">
+    <div class="safeguard-item"><i class="fa-solid fa-graduation-cap"></i><div><h4 style="margin-bottom:8px;">Pre-Employment HIPAA Certification</h4><p style="margin:0;font-size:0.95rem;">Every Probiz employee completes a comprehensive HIPAA certification program before handling any client data. Certification is renewed annually with an updated curriculum reflecting current threats.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-fish"></i><div><h4 style="margin-bottom:8px;">Phishing Simulation Program</h4><p style="margin:0;font-size:0.95rem;">We conduct quarterly simulated phishing campaigns to test staff awareness. Any employee who clicks a simulated phishing link receives immediate remedial training.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-book"></i><div><h4 style="margin-bottom:8px;">PHI Handling Procedures</h4><p style="margin:0;font-size:0.95rem;">Clear written policies govern every scenario: what to do if a PHI document is accidentally emailed to the wrong address, how to handle a lost device, and how to report a suspected breach internally.</p></div></div>
+    <div class="safeguard-item"><i class="fa-solid fa-certificate"></i><div><h4 style="margin-bottom:8px;">Annual Compliance Attestation</h4><p style="margin:0;font-size:0.95rem;">Every employee signs an annual compliance attestation confirming they have read, understood, and will adhere to all HIPAA and data security policies — creating a documented accountability trail.</p></div></div>
+  </div>
+</div>
+</section>
+
+<!-- PENALTY TABLE -->
+<section style="padding:100px 0;background:#fff;">
+<div class="container">
+  <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start;">
+    <div>
+      <div class="hero-badge-glam" style="display:inline-flex;margin-bottom:20px;">Why Compliance Is Non-Negotiable</div>
+      <h2 class="serif" style="font-size:3rem;margin-bottom:30px;line-height:1.2;">The True Cost of a HIPAA Violation</h2>
+      <p style="font-size:1.15rem;line-height:1.8;margin-bottom:30px;">HIPAA penalties are tiered by the degree of negligence. Even accidental violations carry six-figure penalties — and willful neglect can trigger criminal prosecution.</p>
+      <p style="font-size:1.15rem;line-height:1.8;">When you partner with Probiz, you transfer significant compliance risk to a team that treats security as its core competency — not an afterthought.</p>
+      <div style="background:var(--clr-surface);border-radius:16px;padding:30px;margin-top:30px;border-left:4px solid var(--clr-gold);">
+        <p style="margin:0;font-size:1.05rem;"><strong>Our guarantee:</strong> We maintain comprehensive cyber liability insurance and professional indemnity coverage, providing our clients with an additional financial backstop against any Probiz-attributable compliance event.</p>
+      </div>
+    </div>
+    <div>
+      <table class="penalty-table reveal">
+        <thead><tr><th>Violation Tier</th><th>Minimum Fine</th><th>Annual Maximum</th></tr></thead>
+        <tbody>
+          <tr><td>Unknowing Violation</td><td>$100</td><td>$25,000</td></tr>
+          <tr><td>Reasonable Cause</td><td>$1,000</td><td>$100,000</td></tr>
+          <tr><td>Willful Neglect (Corrected)</td><td>$10,000</td><td>$250,000</td></tr>
+          <tr><td>Willful Neglect (Uncorrected)</td><td>$50,000</td><td>$1,500,000</td></tr>
+          <tr><td>Criminal Prosecution</td><td colspan="2" style="color:#dc2626;font-weight:700;">Up to 10 years imprisonment</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.85rem;color:var(--clr-text-muted);margin-top:16px;text-align:center;">Source: HHS Office for Civil Rights (OCR) — HIPAA Enforcement Guidelines</p>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- THE PROBIZ ADVANTAGE -->
+<section style="padding:100px 0;background:var(--clr-surface);">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px;">
+    <div class="hero-badge-glam" style="display:inline-flex;margin-bottom:16px;">The Probiz Advantage</div>
+    <h2 class="section-title serif">Why Leading Practices <span class="text-shimmer-gold">Partner With Us</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">We combine certified expertise with proprietary technology to deliver unmatched revenue cycle performance.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:30px;">
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-bolt" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">Maximized Clean Claim Rates</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">Our advanced rules-based scrubbing engine runs every claim against millions of payer-specific rules before submission, practically eliminating front-end rejections and accelerating your cash flow.</p>
+    </div>
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-user-shield" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">Certified Specialist Teams</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">We don't use generalists. Your account is managed by specialty-specific certified coders who understand the nuances of your exact clinical discipline, ensuring maximum compliant reimbursement.</p>
+    </div>
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-chart-pie" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">Real-Time Financial Analytics</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">Stop waiting for end-of-month reports. Our proprietary BI dashboards give you real-time visibility into collection rates, A/R aging, and denial trends.</p>
+    </div>
+    <div style="background:#fff;padding:40px;border-radius:20px;box-shadow:var(--shadow-soft);border:1px solid rgba(15,29,74,0.08);transition:0.3s;" class="hover-up">
+      <i class="fa-solid fa-lock" style="font-size:2.5rem;color:var(--clr-gold);margin-bottom:20px;display:block;"></i>
+      <h3 style="font-size:1.4rem;color:var(--clr-navy);margin-bottom:15px;">100% EHR Agnostic & Secure</h3>
+      <p style="color:var(--clr-text-muted);line-height:1.7;font-size:1rem;margin:0;">We work seamlessly within your existing software via secure, HIPAA-compliant VPNs. Zero data migration required, and zero disruption to your clinical workflow.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- SEAMLESS ONBOARDING -->
+<section style="padding:100px 0;background:#fff;">
+<div class="container">
+  <div style="display:grid;grid-template-columns:minmax(0, 1.2fr) minmax(0, 0.8fr);gap:60px;align-items:center;" class="onboarding-grid">
+    <div class="reveal">
+      <h2 class="section-title serif">A Seamless <span class="text-shimmer-gold">Transition Process</span></h2>
+      <p style="font-size:1.1rem;color:var(--clr-text-muted);line-height:1.8;margin-bottom:40px;">Switching billing partners shouldn't disrupt your cash flow. Our meticulously engineered onboarding process ensures a smooth, parallel transition.</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="display:flex;gap:20px;margin-bottom:30px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">1</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Discovery & Integration</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">We establish secure remote access to your EHR/PMS and map your existing workflows without interrupting your current team.</p>
+          </div>
+        </li>
+        <li style="display:flex;gap:20px;margin-bottom:30px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">2</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Historical Analysis</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">We audit your past claims to identify immediate revenue leakage, coding errors, and systemic denial trends.</p>
+          </div>
+        </li>
+        <li style="display:flex;gap:20px;margin-bottom:30px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">3</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Custom Rule Building</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">Our rules-based scrubbing engine is programmed with your specific payer matrix and local coverage determinations to prevent future denials.</p>
+          </div>
+        </li>
+        <li style="display:flex;gap:20px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg, var(--clr-navy), var(--clr-gold));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;flex-shrink:0;box-shadow:var(--shadow-soft);">4</div>
+          <div>
+            <h4 style="color:var(--clr-navy);font-size:1.15rem;margin-bottom:8px;">Go-Live & Optimization</h4>
+            <p style="color:var(--clr-text-muted);font-size:0.95rem;margin:0;line-height:1.6;">We take over day-to-day operations, instantly applying our optimized workflows to accelerate your cash flow and reduce days in A/R.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="reveal stagger-1" style="background:var(--clr-navy-dark);padding:50px;border-radius:30px;color:#fff;box-shadow:var(--shadow-deep);position:relative;overflow:hidden;text-align:center;">
+      <div style="position:absolute;top:-50px;right:-50px;width:200px;height:200px;background:radial-gradient(circle, rgba(212,175,55,0.2) 0%, transparent 70%);"></div>
+      <i class="fa-solid fa-sack-dollar" style="font-size:4rem;color:var(--clr-gold);margin-bottom:24px;"></i>
+      <h3 style="font-size:2.2rem;margin-bottom:20px;font-family:serif;line-height:1.2;">The Cost of Inaction</h3>
+      <p style="color:rgba(255,255,255,0.8);font-size:1.05rem;line-height:1.7;margin-bottom:30px;">Every day you wait to optimize your revenue cycle, you are losing money to timely filing limits, unappealed denials, and under-coded encounters. Stop accepting revenue leakage as a cost of doing business.</p>
+      <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:16px 32px;font-size:1.05rem;width:100%;">Stop Revenue Leakage Today</a>
+    </div>
+  </div>
+</div>
+<style>
+@media(max-width:900px){ .onboarding-grid{grid-template-columns:1fr !important;} }
+.hover-up:hover { transform:translateY(-8px); border-color:var(--clr-gold) !important; }
+</style>
+</section>
+
+
+
+
+
+<!-- GLOBAL FAQ -->
+<section style="padding:100px 0;background:var(--clr-surface);">
+<div class="container">
+  <div class="text-center" style="margin-bottom:50px;">
+    <h2 class="section-title serif">Frequently Asked <span class="text-shimmer-gold">Questions</span></h2>
+    <p class="section-subtitle" style="margin:0 auto;">Common questions about our process, integration, and security.</p>
+  </div>
+  <div class="faq-acc" style="max-width:900px;margin:0 auto;">
+    <div class="facc-item reveal">
+      <input type="checkbox" id="gfaq1" class="facc-input" style="display:none;"/>
+      <label for="gfaq1" class="facc-label" style="display:flex;justify-content:space-between;align-items:center;padding:22px 30px;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--clr-navy);background:#fff;border:1px solid rgba(15,29,74,.08);border-radius:12px;">Do I need to change my EHR/EMR software?</label>
+      <div class="facc-body" style="background:#fff;border:1px solid rgba(15,29,74,.08);border-top:none;border-radius:0 0 12px 12px;padding:0 30px;max-height:0;overflow:hidden;transition:.4s;"><p style="padding:20px 0;color:var(--clr-text-muted);line-height:1.7;margin:0;">No. Our team is fully trained on all major platforms including Epic, Cerner, eClinicalWorks, AdvancedMD, Athenahealth, and Kareo. We log directly into your existing system via a secure, HIPAA-compliant connection. Your front office workflow remains entirely unchanged.</p></div>
+    </div>
+    <div class="facc-item reveal" style="margin-top:16px;">
+      <input type="checkbox" id="gfaq2" class="facc-input" style="display:none;"/>
+      <label for="gfaq2" class="facc-label" style="display:flex;justify-content:space-between;align-items:center;padding:22px 30px;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--clr-navy);background:#fff;border:1px solid rgba(15,29,74,.08);border-radius:12px;">How is your service priced?</label>
+      <div class="facc-body" style="background:#fff;border:1px solid rgba(15,29,74,.08);border-top:none;border-radius:0 0 12px 12px;padding:0 30px;max-height:0;overflow:hidden;transition:.4s;"><p style="padding:20px 0;color:var(--clr-text-muted);line-height:1.7;margin:0;">We operate primarily on a percentage-of-collections model. This means we don't get paid until you get paid, perfectly aligning our incentives with your practice's financial success. There are no hidden setup fees or rigid long-term lock-ins.</p></div>
+    </div>
+    <div class="facc-item reveal" style="margin-top:16px;">
+      <input type="checkbox" id="gfaq3" class="facc-input" style="display:none;"/>
+      <label for="gfaq3" class="facc-label" style="display:flex;justify-content:space-between;align-items:center;padding:22px 30px;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--clr-navy);background:#fff;border:1px solid rgba(15,29,74,.08);border-radius:12px;">Is my patient data secure?</label>
+      <div class="facc-body" style="background:#fff;border:1px solid rgba(15,29,74,.08);border-top:none;border-radius:0 0 12px 12px;padding:0 30px;max-height:0;overflow:hidden;transition:.4s;"><p style="padding:20px 0;color:var(--clr-text-muted);line-height:1.7;margin:0;">Absolutely. We are fully HIPAA compliant. We operate under strict Business Associate Agreements (BAAs), utilizing AES-256 encryption, zero-trust network access, and mandatory multi-factor authentication. Patient data is never stored on unauthorized local devices.</p></div>
+    </div>
+  </div>
+</div>
+<style>
+.facc-input:checked ~ .facc-body { max-height: 500px !important; }
+.facc-input:checked ~ .facc-label::after { transform: rotate(45deg); }
+.facc-label::after { content: '\f067'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--clr-gold); transition: .3s; }
+</style>
+</section>
+
+<!-- CTA -->
+<section style="padding:100px 0;background:var(--clr-navy-dark);text-align:center;">
+<div class="container reveal">
+  <h2 class="section-title serif text-white" style="font-size:3.5rem;">Your Patients' Data Deserves <span class="text-shimmer-gold">Ironclad Protection</span></h2>
+  <p style="color:rgba(255,255,255,0.75);font-size:1.25rem;max-width:700px;margin:0 auto 50px;">Speak with our compliance team to understand exactly how Probiz safeguards your PHI — and request a copy of our signed BAA template.</p>
+  <a href="../contact.html#contact-form" class="btn btn-gold" style="padding:20px 50px;font-size:1.2rem;">Talk to Our Compliance Team</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-col"><span style="color:#fff;font-size:26px;font-weight:800;display:block;margin-bottom:16px;">PROBIZ</span><p>HIPAA-compliant medical billing and revenue cycle management for healthcare organizations.</p></div>
+<div class="footer-col"><h4>Compliance</h4><ul><li><a href="hipaa-compliance.html">HIPAA &amp; Security</a></li><li><a href="revenue-cycle-management.html">Full RCM</a></li><li><a href="medical-coding.html">Medical Coding</a></li></ul></div>
+<div class="footer-col"><h4>Company</h4><ul><li><a href="../about.html">About Probiz</a></li><li><a href="../contact.html">Contact Us</a></li></ul></div>
+<div class="footer-col">
+  <h4>Contact</h4>
+  <ul>
+    <li><a href="mailto:info@probizsms.com"><i class="fa-solid fa-envelope" style="width:20px;margin-right:8px"></i>info@probizsms.com</a></li>
+    <li><a href="tel:044181222"><i class="fa-solid fa-phone" style="width:20px;margin-right:8px"></i>044181222</a></li>
+    <li><a href="https://wa.me/971544433410" target="_blank"><i class="fa-brands fa-whatsapp" style="width:20px;margin-right:8px"></i>+971 54 443 3410</a></li>
+    <li><a href="../contact.html"><i class="fa-solid fa-location-dot" style="width:20px;margin-right:8px"></i>Office 1904, Al Zarooni Building 3, Al Mamzar, Dubai, UAE</a></li>
+  </ul>
+</div>
+</div>
+<div style="padding-top:40px;border-top:1px solid rgba(255,255,255,0.08);text-align:center;"><p style="font-size:0.85rem;margin:0;color:rgba(255,255,255,0.4);">© 2026 Probiz. All Rights Reserved.</p></div>
+</div>
+</footer>
+<script>
+function showTab(idx) {
+  document.querySelectorAll('.s-tab').forEach((t,i) => t.classList.toggle('active', i===idx));
+  document.querySelectorAll('.s-panel').forEach((p,i) => p.classList.toggle('active', i===idx));
+}
+</script>
+<script src="../script.js"></script>
+</body>
+</html>
